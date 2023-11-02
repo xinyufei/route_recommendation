@@ -3,26 +3,22 @@ import networkx as nx
 
 
 def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params, trust, demand, capacity,
-                          free_flow_time, explore=None, eta=0, report_threshold=1,
+                          free_flow_time, shortest_path, explore=None, eta=0, report_threshold=1,
                           num_dangerous_reports=None):
     """
         This function solves the static model for the given arc set, origin node, destination node and number of nodes.
-        :param arc_set: available arc sets at current time
-        :param origin_node: origin node set (where the players are)
-        :param dest_node: destination node set (where the players want to go)
+        :param arc_set: available arc set at current time
+        :param origin_node: origin node set
+        :param dest_node: destination node set
         :param num_nodes: total number of nodes
-        :param bpr_params: BPR function parameters (this is for our computation, if is usually set as [0.15, 4], but
-        for current game setting, we set it as [0, 1] so that the number of people on each arc does not affect the
-        travel time)
-        :param trust: trust value for each origin node (each player in the game)
-        :param demand: demand for each origin node (how many people the player represents, for current game setting,
-        it is 1 for each player)
-        :param capacity: capacity for each arc (for current game setting, it is 1 for each arc)
-        :param free_flow_time: free flow time for each arc (for current game setting, it is exactly the travel time
-        of each arc, i.e. how long it will take from i to j)
-        :param explore: explored rate of each arc (this can be further defined, e.g., num_reports / expected_num_reports,
-        if the rate is higher, it means that we have less preference to send people to this arc for exploration)
-        :param eta: parameter for exploration (how much we want to explore)
+        :param bpr_params: BPR function parameters
+        :param trust: trust value for each origin node (each player)
+        :param demand: demand for each origin node (each player)
+        :param capacity: capacity for each arc
+        :param free_flow_time: free flow time for each arc
+        :param shortest_path: shortest path for each origin node given the current arc set A
+        :param explore: explored rate of each arc (dangerous / not dangerous)?
+        :param eta: parameter for information gain
         :param report_threshold: threshold for reports. If the number of dangerous reports is larger than this threshold,
         the arc is considered as dangerous and should be deleted from arc_set
         :param num_dangerous_reports: number of dangerous reports
