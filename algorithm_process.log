@@ -1,0 +1,3650 @@
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:30:38 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.63 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:30:38 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:30:58 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.61 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:30:58 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:31:44 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     1s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.65 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:31:44 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:31:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:31:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:31:46 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:33:52 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.61 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:33:53 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:33:53 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:33:53 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:33:54 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:35:30 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.61 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:35:31 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:35:31 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:35:31 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:35:32 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.62 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:04 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:37 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     1s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     1s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     1s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.72 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:38 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:38 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:38 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:37:39 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:39:28 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.62 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:39:28 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:39:29 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:39:29 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:39:29 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:41:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xd047cf3f
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 4e+01]
+  QObjective range [2e+00, 2e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   6.81162325e+02  5.66846715e+02  1.61e+01 1.37e+02  8.22e+02     0s
+   1   7.75652755e+02  4.95520711e+02  8.82e+00 8.64e+01  4.78e+02     0s
+   2   1.09868986e+03  3.08062806e+02  3.76e+00 5.39e+01  2.60e+02     0s
+   3   1.00869861e+03  4.31718610e+02  1.87e+00 5.93e+00  4.88e+01     0s
+   4   1.01200134e+03  7.37981901e+02  8.26e-01 2.59e+00  2.43e+01     0s
+   5   9.02468458e+02  8.21132932e+02  2.82e-01 8.77e-01  8.27e+00     0s
+   6   8.05029125e+02  7.90160506e+02  8.96e-02 3.15e-01  2.60e+00     0s
+   7   7.58421658e+02  7.74020303e+02  2.85e-02 2.08e-01  1.37e+00     0s
+   8   7.37921842e+02  7.53904461e+02  1.29e-02 1.30e-01  8.84e-01     0s
+   9   7.14984593e+02  7.38872736e+02  3.53e-03 9.18e-02  6.06e-01     0s
+  10   6.93465228e+02  7.02611960e+02  1.20e-03 5.08e-02  5.26e-01     0s
+  11   6.77355648e+02  6.75655633e+02  5.16e-04 1.98e-02  3.24e-01     0s
+  12   6.48758127e+02  6.58597879e+02  1.19e-04 1.15e-02  2.51e-01     0s
+  13   6.39735517e+02  6.49924071e+02  3.51e-05 7.33e-03  1.81e-01     0s
+  14   6.29803137e+02  6.32329120e+02  1.61e-05 3.35e-03  1.45e-01     0s
+  15   6.17680735e+02  6.17475024e+02  1.55e-06 1.11e-03  8.96e-02     0s
+  16   6.14340188e+02  6.15272835e+02  4.18e-06 6.65e-04  5.56e-02     0s
+  17   6.12991496e+02  6.13369320e+02  7.07e-06 2.10e-04  1.90e-02     0s
+  18   6.12364090e+02  6.12437145e+02  5.99e-06 3.67e-05  3.47e-03     1s
+  19   6.12249017e+02  6.12253565e+02  7.52e-06 7.21e-06  7.61e-04     1s
+  20   6.12210946e+02  6.12209575e+02  3.31e-05 1.99e-07  3.21e-05     1s
+  21   6.12208062e+02  6.12208077e+02  2.47e-05 1.27e-07  9.67e-07     1s
+
+Barrier solved model in 21 iterations and 0.62 seconds (0.04 work units)
+Optimal objective 6.12208062e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:41:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xa97a5f6e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 114 rows, 249 columns, 597 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.227840e+01   0.000000e+00      0s
+     127    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 127 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:41:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xb60dcc7e
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 8e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000756e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000075573e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:41:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x462f5960
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9590267e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  9.959026723e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:41:04 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x2cfe2f84
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0002592e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  2.000259223e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:43:13 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x780e015f
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 704 rows, 777 columns, 1595 nonzeros
+Presolved model has 228 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 3.098e+03
+ Factor NZ  : 4.970e+03 (roughly 1 MB of memory)
+ Factor Ops : 4.082e+04 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   4.58618720e+01 -1.28312023e-03  7.59e+00 1.32e+02  3.96e+02     0s
+   1   3.17974202e+02  5.95122538e+01  3.66e+00 2.45e+01  1.01e+02     0s
+   2   3.03596474e+02  1.95099421e+02  1.63e+00 1.21e+01  4.59e+01     0s
+   3   2.91291375e+02  2.98041642e+02  8.42e-01 7.78e+00  2.72e+01     0s
+   4   3.46670853e+02  3.40952987e+02  4.59e-01 4.90e+00  2.50e+01     0s
+   5   3.47288149e+02  3.45833899e+02  2.92e-01 3.21e+00  1.82e+01     0s
+   6   3.31834229e+02  3.43203314e+02  1.21e-01 2.17e+00  1.13e+01     0s
+   7   3.15616185e+02  3.28353721e+02  5.95e-02 1.22e+00  6.21e+00     0s
+   8   2.96394743e+02  3.13588896e+02  1.89e-02 7.08e-01  3.14e+00     0s
+   9   2.82417424e+02  2.89526138e+02  3.91e-03 2.61e-01  1.21e+00     0s
+  10   2.76640897e+02  2.79617342e+02  1.57e-03 1.24e-01  6.33e-01     0s
+  11   2.73261165e+02  2.77172801e+02  6.92e-04 9.36e-02  4.54e-01     0s
+  12   2.70941079e+02  2.73307292e+02  3.14e-04 5.05e-02  2.67e-01     0s
+  13   2.69445516e+02  2.71399797e+02  1.33e-04 3.11e-02  1.66e-01     0s
+  14   2.68739043e+02  2.70354073e+02  6.06e-05 2.15e-02  1.14e-01     0s
+  15   2.68337693e+02  2.69478054e+02  2.60e-05 1.40e-02  7.39e-02     0s
+  16   2.68154932e+02  2.68791441e+02  1.28e-05 8.10e-03  4.39e-02     0s
+  17   2.68053511e+02  2.68311425e+02  7.77e-06 3.84e-03  2.25e-02     0s
+  18   2.67936727e+02  2.68094358e+02  2.40e-06 1.94e-03  1.06e-02     0s
+  19   2.67904563e+02  2.67965862e+02  1.14e-06 8.29e-04  4.70e-03     0s
+  20   2.67884393e+02  2.67922837e+02  4.28e-07 4.58e-04  2.45e-03     0s
+  21   2.67872689e+02  2.67883377e+02  5.97e-08 1.15e-04  5.80e-04     0s
+  22   2.67870673e+02  2.67871414e+02  5.29e-08 1.12e-05  6.65e-05     0s
+  23   2.67870112e+02  2.67870129e+02  5.31e-07 7.49e-07  5.47e-06     0s
+  24   2.67870051e+02  2.67870039e+02  1.53e-07 5.79e-07  1.08e-06     0s
+  25   2.67870030e+02  2.67870027e+02  1.67e-08 3.43e-06  1.05e-07     1s
+
+Barrier solved model in 25 iterations and 0.51 seconds (0.01 work units)
+Optimal objective 2.67870030e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:43:14 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x93c2edbf
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [7e-05, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 246 columns, 595 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.836787e+01   0.000000e+00      0s
+     118    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 118 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:43:14 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0xcaa64038
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0024441e-05   0.000000e+00   0.000000e+00      0s
+       0    1.0024441e-05   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.002444098e-05
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:43:14 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0x792ec65b
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 3 rows, 6 columns, 6 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3001347e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3001347e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.300134726e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:43:15 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x8fef6c98
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 2 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.0000314e-04   0.000000e+00   0.000000e+00      0s
+       0    2.0000314e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.000031353e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:48:18 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xbb440baf
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-01, 2e-01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.36652373e+02  5.66258732e+01  6.23e+00 4.72e+01  1.26e+02     0s
+   1   3.81626772e+02  5.44193787e+01  2.73e+00 1.28e+01  4.19e+01     0s
+   2   3.74163422e+02  1.28640416e+02  1.44e+00 5.30e+00  1.76e+01     0s
+   3   3.52795259e+02  2.34530343e+02  8.77e-01 3.03e+00  1.02e+01     0s
+   4   3.95689067e+02  3.44742028e+02  4.52e-01 1.81e+00  7.95e+00     0s
+   5   3.91212130e+02  3.72898227e+02  2.09e-01 8.14e-01  4.11e+00     0s
+   6   3.76789641e+02  3.67455417e+02  8.88e-02 4.79e-01  2.33e+00     0s
+   7   3.58003422e+02  3.56495560e+02  3.50e-02 2.38e-01  1.11e+00     0s
+   8   3.41651223e+02  3.43625136e+02  9.32e-03 1.07e-01  4.56e-01     0s
+   9   3.35011141e+02  3.33651449e+02  4.79e-03 4.31e-02  2.16e-01     0s
+  10   3.30183949e+02  3.29390298e+02  2.17e-03 2.38e-02  1.22e-01     0s
+  11   3.26801836e+02  3.26544738e+02  7.78e-04 1.06e-02  5.62e-02     0s
+  12   3.25238581e+02  3.25476215e+02  3.98e-04 6.72e-03  3.59e-02     0s
+  13   3.24420428e+02  3.24553727e+02  1.89e-04 3.29e-03  1.82e-02     0s
+  14   3.23818349e+02  3.24136132e+02  3.67e-05 1.78e-03  7.73e-03     0s
+  15   3.23663979e+02  3.23727618e+02  9.40e-06 4.40e-04  2.10e-03     0s
+  16   3.23607793e+02  3.23606627e+02  2.67e-06 6.82e-05  4.14e-04     0s
+  17   3.23587445e+02  3.23584615e+02  3.84e-07 2.17e-06  3.53e-05     1s
+  18   3.23583960e+02  3.23583912e+02  9.62e-08 3.55e-08  5.86e-07     1s
+
+Barrier solved model in 18 iterations and 0.55 seconds (0.03 work units)
+Optimal objective 3.23583960e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:48:19 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xb3a62c76
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.060521e+01   0.000000e+00      0s
+     106    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 106 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:48:19 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x424a2a00
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+00]
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective -0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:48:19 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xf2746926
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6010870e-04   0.000000e+00   0.000000e+00      0s
+       0    2.6010870e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  2.601086980e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:48:20 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x5ba0b579
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000853e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000853e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000085259e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:49:57 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0xbb440baf
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-01, 2e-01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.36652373e+02  5.66258732e+01  6.23e+00 4.72e+01  1.26e+02     0s
+   1   3.81626772e+02  5.44193787e+01  2.73e+00 1.28e+01  4.19e+01     0s
+   2   3.74163422e+02  1.28640416e+02  1.44e+00 5.30e+00  1.76e+01     0s
+   3   3.52795259e+02  2.34530343e+02  8.77e-01 3.03e+00  1.02e+01     0s
+   4   3.95689067e+02  3.44742028e+02  4.52e-01 1.81e+00  7.95e+00     0s
+   5   3.91212130e+02  3.72898227e+02  2.09e-01 8.14e-01  4.11e+00     0s
+   6   3.76789641e+02  3.67455417e+02  8.88e-02 4.79e-01  2.33e+00     0s
+   7   3.58003422e+02  3.56495560e+02  3.50e-02 2.38e-01  1.11e+00     0s
+   8   3.41651223e+02  3.43625136e+02  9.32e-03 1.07e-01  4.56e-01     0s
+   9   3.35011141e+02  3.33651449e+02  4.79e-03 4.31e-02  2.16e-01     0s
+  10   3.30183949e+02  3.29390298e+02  2.17e-03 2.38e-02  1.22e-01     0s
+  11   3.26801836e+02  3.26544738e+02  7.78e-04 1.06e-02  5.62e-02     0s
+  12   3.25238581e+02  3.25476215e+02  3.98e-04 6.72e-03  3.59e-02     0s
+  13   3.24420428e+02  3.24553727e+02  1.89e-04 3.29e-03  1.82e-02     0s
+  14   3.23818349e+02  3.24136132e+02  3.67e-05 1.78e-03  7.73e-03     0s
+  15   3.23663979e+02  3.23727618e+02  9.40e-06 4.40e-04  2.10e-03     0s
+  16   3.23607793e+02  3.23606627e+02  2.67e-06 6.82e-05  4.14e-04     0s
+  17   3.23587445e+02  3.23584615e+02  3.84e-07 2.17e-06  3.53e-05     1s
+  18   3.23583960e+02  3.23583912e+02  9.62e-08 3.55e-08  5.86e-07     1s
+
+Barrier solved model in 18 iterations and 0.55 seconds (0.03 work units)
+Optimal objective 3.23583960e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:49:57 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0xb3a62c76
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   7.060521e+01   0.000000e+00      0s
+     106    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 106 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:49:58 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x424a2a00
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+00]
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective -0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:49:58 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xf2746926
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.6010870e-04   0.000000e+00   0.000000e+00      0s
+       0    2.6010870e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  2.601086980e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:49:58 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0x5ba0b579
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [9e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000853e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000853e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000085259e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:50:33 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.48 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:50:33 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:50:34 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:50:34 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:50:34 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:53:14 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     1s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     1s
+
+Barrier solved model in 17 iterations and 0.53 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:53:15 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:53:15 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:53:16 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:53:16 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:54:48 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.48 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:54:48 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:54:48 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:54:49 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:54:49 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:55:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     1s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     1s
+
+Barrier solved model in 17 iterations and 0.54 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:55:46 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:55:46 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:55:47 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:55:47 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:24 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.49 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:24 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:25 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:25 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:26 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:44 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.48 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:44 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:57:45 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:01 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.49 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:01 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:55 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.49 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:55 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:56 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:56 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 22:59:57 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:00:11 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.49 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:00:12 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:00:12 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6262 columns and 97404 nonzeros
+Model fingerprint: 0x2e7bce37
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+       0    1.0000554e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000055370e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:00:13 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 4954 columns and 77261 nonzeros
+Model fingerprint: 0xb42c3e30
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 4 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+       0    3.3011883e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  3.301188325e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:00:13 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 6438 columns and 100485 nonzeros
+Model fingerprint: 0xa60b5a53
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.00s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+       0    3.0003409e-04   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.01 work units)
+Optimal objective  3.000340912e-04
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:01:00 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x47d7be88
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e-04, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+01]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   3.65610392e+02  5.66115477e+00  5.94e+00 1.22e+01  3.26e+01     0s
+   1   4.01831498e+02 -8.17899186e-02  2.44e+00 2.63e+00  1.01e+01     0s
+   2   3.35378940e+02  8.83524979e+01  1.19e+00 1.41e+00  4.77e+00     0s
+   3   3.16946715e+02  1.78423294e+02  7.59e-01 7.01e-01  2.60e+00     0s
+   4   3.04994617e+02  2.19802618e+02  3.64e-01 2.96e-01  1.36e+00     0s
+   5   2.94319356e+02  2.47223901e+02  2.55e-01 1.16e-01  7.82e-01     0s
+   6   2.93783396e+02  2.67690498e+02  1.70e-01 6.52e-02  5.45e-01     0s
+   7   2.89949310e+02  2.74590779e+02  1.24e-01 4.00e-02  3.98e-01     0s
+   8   2.85883620e+02  2.76923506e+02  7.24e-02 2.42e-02  2.56e-01     0s
+   9   2.80330285e+02  2.76627635e+02  3.20e-02 1.35e-02  1.33e-01     0s
+  10   2.77070586e+02  2.75837232e+02  1.04e-02 5.66e-03  5.17e-02     0s
+  11   2.74575731e+02  2.74997772e+02  1.86e-03 3.25e-03  1.90e-02     0s
+  12   2.73937185e+02  2.73902845e+02  5.20e-04 6.11e-04  4.16e-03     0s
+  13   2.73635193e+02  2.73636236e+02  1.10e-04 1.44e-04  9.18e-04     0s
+  14   2.73553444e+02  2.73565685e+02  2.49e-05 5.00e-05  2.66e-04     0s
+  15   2.73529137e+02  2.73532733e+02  2.32e-06 8.25e-06  3.68e-05     0s
+  16   2.73526326e+02  2.73527663e+02  7.77e-08 1.90e-06  6.53e-06     0s
+  17   2.73526073e+02  2.73526143e+02  2.88e-08 8.77e-08  2.77e-07     0s
+
+Barrier solved model in 17 iterations and 0.48 seconds (0.03 work units)
+Optimal objective 2.73526073e+02
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:01:01 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x8e5b2f46
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-04, 1e+01]
+Presolve time: 0.00s
+Presolved: 115 rows, 247 columns, 596 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   6.833739e+01   0.000000e+00      0s
+     117    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 117 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:01:01 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 11968 columns and 186959 nonzeros
+Model fingerprint: 0x20920f20
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e-07, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 5 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    2.1111109e+00   0.000000e+00   0.000000e+00      0s
+       0    2.1111109e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  2.111110910e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:01:02 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 10250 columns and 163636 nonzeros
+Model fingerprint: 0x69a205a9
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [4e-09, 4e+00]
+Presolve time: 0.00s
+Presolved: 5 rows, 10 columns, 11 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.2555286e+01   8.879094e+00   0.000000e+00      0s
+       4    1.2555225e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.255522543e+01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:01:03 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 14360 columns and 231059 nonzeros
+Model fingerprint: 0xc029d8ed
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 2e+00]
+Presolve time: 0.01s
+Presolved: 8 rows, 9 columns, 21 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.0397768e+00   5.367965e+00   0.000000e+00      0s
+       5    4.0274777e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 5 iterations and 0.02 seconds (0.02 work units)
+Optimal objective  4.027477744e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:04:04 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Set parameter BarHomogeneous to value 1
+Set parameter BarConvTol to value 1e-06
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 113 rows, 380 columns and 390 nonzeros
+Model fingerprint: 0x65a60a03
+Model has 76 quadratic objective terms
+Model has 228 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [4e+00, 4e+00]
+  QLMatrix range   [4e+00, 4e+00]
+  Objective range  [2e+00, 1e+01]
+  QObjective range [2e-02, 2e-02]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-05, 1e+00]
+Presolve removed 93 rows and 76 columns
+Presolve time: 0.00s
+Presolved: 781 rows, 855 columns, 1749 nonzeros
+Presolved model has 229 second-order cone constraints
+Ordering time: 0.00s
+
+Barrier statistics:
+ AA' NZ     : 1.144e+05
+ Factor NZ  : 1.155e+05 (roughly 2 MB of memory)
+ Factor Ops : 3.630e+07 (less than 1 second per iteration)
+ Threads    : 8
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.43229217e-01  1.42993589e-01  7.87e-01 3.80e-01  1.38e-01     0s
+   1   2.73488015e+01  2.19052055e+01  1.48e-01 9.13e-02  1.95e-02     0s
+   2   2.39493375e+01  1.89926806e+01  8.78e-02 2.11e-02  4.93e-03     0s
+   3   2.55051570e+01  1.99950600e+01  6.09e-02 1.03e-02  3.30e-03     0s
+   4   2.55469197e+01  2.25699017e+01  3.38e-02 5.63e-03  2.18e-03     0s
+   5   2.28068808e+01  2.17516162e+01  1.21e-02 2.62e-03  9.92e-04     0s
+   6   2.09770338e+01  2.05004559e+01  3.10e-03 5.78e-04  2.45e-04     0s
+   7   2.03435098e+01  2.02990128e+01  5.47e-04 1.79e-04  5.33e-05     0s
+   8   2.02302874e+01  2.02224030e+01  1.02e-04 3.37e-05  8.51e-06     0s
+   9   2.02017705e+01  2.02034950e+01  1.37e-05 8.21e-06  1.71e-06     0s
+  10   2.01966076e+01  2.01968314e+01  1.76e-06 1.08e-06  1.96e-07     0s
+  11   2.01957480e+01  2.01957600e+01  2.66e-07 1.93e-07  3.57e-08     0s
+
+Barrier solved model in 11 iterations and 0.34 seconds (0.02 work units)
+Optimal objective 2.01957480e+01
+
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:04:04 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 206 rows, 228 columns and 802 nonzeros
+Model fingerprint: 0x7e6703aa
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [8e-05, 1e+00]
+Presolve time: 0.00s
+Presolved: 125 rows, 230 columns, 575 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.999753e+00   0.000000e+00      0s
+      52    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 52 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  0.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:04:05 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 11968 columns and 186959 nonzeros
+Model fingerprint: 0xfd440a4d
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [7e-05, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 3 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+       0    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.02 seconds (0.01 work units)
+Optimal objective  1.000000000e+00
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:04:06 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 10250 columns and 163636 nonzeros
+Model fingerprint: 0x70d376b1
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [6e-07, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 5 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.9989969e-01   0.000000e+00   0.000000e+00      0s
+       0    9.9989969e-01   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  9.998996941e-01
+
+Gurobi 10.0.3 (mac64[rosetta2]) logging started Wed Nov  1 23:04:07 2023
+
+Set parameter LogFile to value "algorithm_process.log"
+Set parameter DualReductions to value 0
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (mac64[rosetta2])
+
+CPU model: Apple M1
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 76 rows, 14360 columns and 231059 nonzeros
+Model fingerprint: 0xd5e4d83a
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve time: 0.01s
+Presolved: 0 rows, 1 columns, 0 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+       0    1.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds (0.01 work units)
+Optimal objective  1.000000000e+00
