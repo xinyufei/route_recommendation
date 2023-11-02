@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69737e45-05c7-443c-bc08-96857f22f9a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/algorithm_for_game.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm_process.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_iteration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_iteration_ucb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_regret.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_regret_all_trust_ucb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_regret_trust_0p32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_regret_trust_0p32_ucb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bandit_figure/sioux_falls_regret_ucb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/algorithm_for_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/algorithm_for_game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +112,7 @@
       <workItem from="1695415267054" duration="12005000" />
       <workItem from="1696517159545" duration="16599000" />
       <workItem from="1697824312787" duration="2000" />
-      <workItem from="1698633735031" duration="21370000" />
+      <workItem from="1698633735031" duration="22234000" />
     </task>
     <servers />
   </component>
