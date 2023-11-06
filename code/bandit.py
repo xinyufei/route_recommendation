@@ -55,12 +55,28 @@ class Bandit:
 
 # define class of optimizer for bandit
 class GreedyOptimizer:
-    def __init__(self, network_structure, true_trust_rate, true_trust_rate_std=0.01, epsilon=0.05):
+    def __init__(self, network_structure, true_trust_rate, true_trust_rate_std=0.001, epsilon=0.05):
         self.network_structure = network_structure
         self.true_trust_rate = true_trust_rate
         self.true_trust_rate_std = true_trust_rate_std
         self.epsilon = epsilon
         self.bandit_list = []
+
+    def compute_upper_bound(self):
+        # assume that all the people going along the shortest path
+        # get the shortest path travel time
+        shortest_path_time = 0
+        shortest_path_flow = {}
+        for key, val in self.network_structure['shortest_path'].items():
+            if key not in shortest_path_flow:
+                shortest_path_flow[key] = 0
+            for o in val:
+                shortest_path_flow[key] += self.network_structure['demand'][o]
+            shortest_path_time += self.network_structure['free_flow_time'][key] * \
+                                  (1 + self.network_structure['bpr_params'][0] *
+                                   (shortest_path_flow[key] / self.network_structure['capacity'][key])
+                                   ** self.network_structure['bpr_params'][1]) * shortest_path_flow[key]
+        return shortest_path_time / sum(self.network_structure['demand'].values())
 
     def build_bandit(self, trust_list):
         for trust in trust_list:
@@ -95,7 +111,7 @@ class GreedyOptimizer:
             sample_trust_list.append(trust_rate)
             # pull each arm first
             if i < len(self.bandit_list):
-               # pull the arm
+                # pull the arm
                 actions.append(i)
                 cur_time = self.bandit_list[i].pull(trust_rate)
                 total_time_bandit[i] += cur_time
@@ -122,6 +138,7 @@ class GreedyOptimizer:
         return actions, travel_time, total_time_bandit, pull_time_bandit, opt_time, sample_trust_list
 
     def run_ucb(self, num_iter, beta=1, reward='final'):
+        max_time = self.compute_upper_bound()
         actions = []
         travel_time = []
         total_time_bandit = np.zeros(len(self.bandit_list))
@@ -142,9 +159,9 @@ class GreedyOptimizer:
             else:
                 # compute the upper confidence bound
                 if reward == 'final':
-                    ucb = -total_time_bandit / pull_time_bandit + beta * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+                    ucb = -total_time_bandit / pull_time_bandit + beta * max_time * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
                 elif reward == 'learn':
-                    ucb = -time_bandit_diff / pull_time_bandit + beta * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+                    ucb = -time_bandit_diff / pull_time_bandit + beta * max_time * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
                 # pull the arm with the largest upper confidence bound
                 arm = np.argmax(ucb)
             actions.append(arm)
@@ -175,4 +192,3 @@ class GreedyOptimizer:
     def set_true_trust_rate(self, true_trust_rate, true_trust_rate_std=0.01):
         self.true_trust_rate = true_trust_rate
         self.true_trust_rate_std = true_trust_rate_std
-
