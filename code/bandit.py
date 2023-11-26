@@ -137,6 +137,14 @@ class GreedyOptimizer:
                     travel_time.append(cur_time)
         return actions, travel_time, total_time_bandit, pull_time_bandit, opt_time, sample_trust_list
 
+    def update_ucb_learn_final(self, total_time_bandit, pull_time_bandit, i, beta=1):
+        ucb = -total_time_bandit / pull_time_bandit + beta * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+        return ucb
+
+    def update_ucb_learn_diff(self, time_bandit_diff, pull_time_bandit, i, beta=1):
+        ucb = -time_bandit_diff / pull_time_bandit + beta * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+        return ucb
+
     def run_ucb(self, num_iter, beta=1, reward='final'):
         max_time = self.compute_upper_bound()
         actions = []
@@ -159,9 +167,9 @@ class GreedyOptimizer:
             else:
                 # compute the upper confidence bound
                 if reward == 'final':
-                    ucb = -total_time_bandit / pull_time_bandit + beta * max_time * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+                    ucb = self.update_ucb_learn_final(total_time_bandit, pull_time_bandit, i, beta)
                 elif reward == 'learn':
-                    ucb = -time_bandit_diff / pull_time_bandit + beta * max_time * np.sqrt(2 * np.log(i + 1) / pull_time_bandit)
+                    ucb = self.update_ucb_learn_diff(time_bandit_diff, pull_time_bandit, i, beta)
                 # pull the arm with the largest upper confidence bound
                 arm = np.argmax(ucb)
             actions.append(arm)

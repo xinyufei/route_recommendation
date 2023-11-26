@@ -1,9 +1,12 @@
 import gurobipy as gp
 import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
+import random
 
 
 def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params, trust, demand, capacity,
-                          free_flow_time, shortest_path, explore=None, eta=0, report_threshold=1,
+                          free_flow_time, required_explore=None, eta=0, report_threshold=1,
                           num_dangerous_reports=None):
     """
         This function solves the static model for the given arc set, origin node, destination node and number of nodes.
@@ -16,8 +19,7 @@ def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params
         :param demand: demand for each origin node (each player)
         :param capacity: capacity for each arc
         :param free_flow_time: free flow time for each arc
-        :param shortest_path: shortest path for each origin node given the current arc set A
-        :param explore: explored rate of each arc (dangerous / not dangerous)?
+        :param required_explore: required exploration of each arc
         :param eta: parameter for information gain
         :param report_threshold: threshold for reports. If the number of dangerous reports is larger than this threshold,
         the arc is considered as dangerous and should be deleted from arc_set
@@ -50,8 +52,8 @@ def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params
     print("Solve the optimization model to get optimal recommendation with weight on exploration.")
     m, x, z, obj1, obj2, x_val, z_val = solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params,
                                                            trust, demand, capacity, free_flow_time,
-                                                           shortest_path_per_node, explore, eta)
-    print(x_val)
+                                                           shortest_path_per_node, required_explore, eta)
+    # print(x_val)
     # find the recommended route
     print("Find recommended route from optimized flow")
     m_origin, x_origin = get_flow_per_origin(x_val, arc_set, origin_node, dest_node, num_nodes)
@@ -69,7 +71,7 @@ def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params
 
 
 def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, trust, demand, capacity, free_flow_time,
-                       shortest_path, explore=None, eta=0):
+                       shortest_path, require_explore=None, eta=0):
     '''
     This function solves the static model for the given arc set, origin node, destination node and number of nodes.
     :param arc_set: available arc set at current time
@@ -82,11 +84,9 @@ def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, t
     :param capacity: capacity for each arc
     :param free_flow_time: free flow time for each arc
     :param shortest_path: shortest path for each origin node given the current arc set A
-    :param explore: explored rate of each arc (dangerous / not dangerous)?
+    :param require_explore: required exploration of arcs
     :param eta: parameter for information gain
-    :param report_threshold: threshold for reports. If the number of dangerous reports is larger than this threshold,
     the arc is considered as dangerous and should be deleted from arc_set
-    :param num_dangerous_reports: number of dangerous reports
     :return:
     '''
     m = gp.Model("static_model")
@@ -103,13 +103,25 @@ def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, t
     obj2 = 0
     # if we consider reports of blocked arcs, add an information gain term
     weight = {}
-    if explore is not None:
-        for i, j in arc_set:
-            weight[i, j] = 1 / (explore[i, j] + 1e-3)
-            obj2 += (z[i, j] - weight[i, j] / sum(weight.values()) * sum(demand.values())) * (
-                    z[i, j] - weight[i, j] / sum(weight.values()) * sum(demand.values()))
+    if require_explore is not None:
+        # for i, j in arc_set:
+        #     weight[i, j] = 1 / (require_explore[i, j] + 1e-3)
+        #     obj2 += (z[i, j] - weight[i, j] / sum(weight.values()) * sum(demand.values())) * (
+        #             z[i, j] - weight[i, j] / sum(weight.values()) * sum(demand.values()))
+        # define binary variables
+        u = m.addVars(arc_set, vtype=gp.GRB.BINARY, name="u")
+        y = m.addVars(arc_set, name="y")
+        for (i, j) in arc_set:
+            obj2 += y[i, j]
         obj2 = eta * obj2
         print('Add flow variance objective')
+        # Add constraints for u and z, if z>0, then u=1
+        epsilon = 1e-3
+        M = sum(demand.values())
+        m.addConstrs((z[i, j] >= epsilon + M * (u[i, j] - 1) for i, j in arc_set), name='u_z_1')
+        m.addConstrs((z[i, j] <= epsilon + M * u[i, j] for i, j in arc_set), name='u_z_2')
+        # add constraints for y, y=max(ru-z, 0)
+        m.addConstrs((y[i, j] >= u[i, j] * require_explore[i, j] - z[i, j] for i, j in arc_set), name='y')
     m.setObjective(obj1 + obj2, gp.GRB.MINIMIZE)
     # # Add SOCP constraints
     socp_cons_1 = m.addConstrs((4 * z[i, j] * z[i, j] + (lambda_[i, j] - 1) * (lambda_[i, j] - 1) -
@@ -148,7 +160,7 @@ def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, t
     # get value of obj1
     obj1_val = obj1.getValue()
     # get value of obj2
-    if explore is not None:
+    if require_explore is not None:
         obj2_val = obj2.getValue()
     else:
         obj2_val = 0
@@ -219,16 +231,8 @@ def determine_path_flows(G, arc_flows, origin_node, dest_node):
         # Set objective: This is arbitrary as we're mainly interested in constraints
         m.setObjective(gp.quicksum(x[p] for p in range(len(paths))), gp.GRB.MAXIMIZE)
         # Constraints based on arc flows
-        for path in paths:
-            if path == [5, 1, 0]:
-                print(paths.index(path))
-            if len(path) < 6:
-                print(path)
         for (u, v), flow in arc_flows[s].items():
             paths_with_arc = [p for p in range(len(paths)) if (u, v) in zip(paths[p], paths[p][1:])]
-            if u == 5 and v == 1:
-                print(paths_with_arc)
-                print(flow)
             m.addConstr(gp.quicksum(x[p] for p in paths_with_arc) <= flow, f"arc_{u}_{v}")
         m.Params.LogToConsole = 0
         m.Params.LogFile = 'algorithm_process.log'
@@ -241,3 +245,89 @@ def determine_path_flows(G, arc_flows, origin_node, dest_node):
             if x[i].x > 1e-3:
                 path_flow[s][tuple(paths[i])] = x[i].x
     return path_flow
+
+
+def parse_tntp_file(file_path):
+    """
+    Parse the tntp file
+    :param file_path:
+    :return: coordinates of nodes
+    """
+    coords = {}
+    with open(file_path, 'r') as file:
+        for line in file:
+            parts = line.split('\t')
+            if len(parts) >= 3 and parts[0].isdigit():
+                node = int(parts[0]) - 1
+                x, y = float(parts[1]), float(parts[2])
+                coords[node] = (x, y)
+    return coords
+
+
+def parse_recommendation(recommendation_results, single_path=True):
+    """
+    Parse the recommendation results
+    :param recommendation_results:
+    :param single_path:
+    :return:
+    """
+    recommendation = {}
+    for origin, paths in recommendation_results.items():
+        if not single_path:
+           recommendation[origin] = [path for path in paths.keys() if paths[path] > 1e-3]
+        else:
+            # get uniformed weight for each path by flow
+            total_flow = sum(paths.values())
+            weight_arr = [flow / total_flow for flow in paths.values()]
+            # randomly choose a path based on the weight
+            path = random.choices(list(paths.keys()), weight_arr, k=1)[0]
+            recommendation[origin] = [path]
+    return recommendation
+
+
+def visualize_recommendation(recommendation, coord_file, arc_set):
+    """
+    Visualize the recommendation results
+    :param recommendation: recommendation results
+    :param coord_file: coordinates of nodes
+    :param arc_set: arc set
+    :return: None
+    """
+
+    # Parse the TNTP file to get coordinates
+    coords = parse_tntp_file(coord_file)
+
+    # Create a graph
+    G = nx.Graph()
+
+    # Add nodes with their coordinates
+    for node, pos in coords.items():
+        G.add_node(node, pos=pos)
+
+    # Add edges from the provided arc set
+    for edge in arc_set:
+        G.add_edge(*edge)
+
+    # Plot the graph
+    fig = plt.figure(figsize=(10, 8), dpi=300)
+    pos = nx.get_node_attributes(G, 'pos')
+    nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=300, font_size=12, font_weight='bold',
+            edge_color='gray')
+
+    # Highlight the recommendation routes
+    colors = ['red', 'green', 'blue', 'orange', 'purple']  # Extend this list if more colors are needed
+    legend_handles = []
+    for idx, (origin, routes) in enumerate(recommendation.items()):
+        color = colors[idx % len(colors)]  # Cycle through colors
+        legend_label = f"Route from {origin}"
+        for route in routes:
+            route_edges = [(route[i], route[i + 1]) for i in range(len(route) - 1)]
+            nx.draw_networkx_edges(G, pos, edgelist=route_edges, width=2, edge_color=color)
+            legend_handles.append(plt.Line2D([0], [0], color=color, linewidth=2, label=legend_label))
+
+    # Add legend to the plot
+    plt.legend(handles=legend_handles, loc='upper left', fontsize=16)
+
+    # set title with font size 20
+    plt.title('Recommendation Results', fontsize=20)
+    return fig
