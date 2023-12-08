@@ -5,27 +5,20 @@ import numpy as np
 import random
 
 
-def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params, trust, demand, capacity,
-                          free_flow_time, required_explore=None, eta=0, report_threshold=1,
-                          num_dangerous_reports=None):
+def get_recommended_route_simple(arc_set, origin_node, dest_node, trust, free_flow_time,
+                                 report_threshold=1, num_dangerous_reports=None):
     """
         This function solves the static model for the given arc set, origin node, destination node and number of nodes.
-        :param arc_set: available arc set at current time
-        :param origin_node: origin node set
-        :param dest_node: destination node set
-        :param num_nodes: total number of nodes
-        :param bpr_params: BPR function parameters
-        :param trust: trust value for each origin node (each player)
-        :param demand: demand for each origin node (each player)
-        :param capacity: capacity for each arc
-        :param free_flow_time: free flow time for each arc
-        :param required_explore: required exploration of each arc
-        :param eta: parameter for information gain
+        :param arc_set: available arc set at current time, type: list of tuples
+        :param origin_node: origin node set, type: list of integers
+        :param dest_node: destination node set, type: list of integers
+        :param trust: trust value for each origin node (each player), type: dictionary {int: float}
+        :param free_flow_time: free flow time for each arc, type: dictionary {(int, int): float}
         :param report_threshold: threshold for reports. If the number of dangerous reports is larger than this threshold,
-        the arc is considered as dangerous and should be deleted from arc_set
-        :param num_dangerous_reports: number of dangerous reports
+        the arc is considered as dangerous and should be deleted from arc_set, type: integer
+        :param num_dangerous_reports: number of dangerous reports of each arc, type: dictionary {(int, int): int}
         :return:
-    """
+        """
     # check if the dangerous reports are larger than the threshold:
     # delete the arc from arc_set
     if num_dangerous_reports is not None:
@@ -48,11 +41,78 @@ def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params
                 j_min = travel_time[i, j]
                 shortest_path_per_node[i] = shortest_path[i, j]
                 travel_time_per_node[i] = travel_time[i, j]
+    result = {}
+    # make shortest_path_per_node to a dictionary with key as origin node and value as the shortest path
+    # from origin node to destination node
+    result['recommended_route'] = shortest_path_per_node
+    return result
+
+
+def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, trust, demand, free_flow_time,
+                          capacity=None, bpr_params=None, required_explore=None, eta=0, report_threshold=1,
+                          num_dangerous_reports=None):
+    """
+        This function solves the static model for the given arc set, origin node, destination node and number of nodes.
+        :param arc_set: available arc set at current time, type: list of tuples
+        :param origin_node: origin node set, type: list of integers
+        :param dest_node: destination node set, type: list of integers
+        :param num_nodes: total number of nodes, type: integer
+        :param bpr_params: BPR function parameters, type: [float, float]
+        :param trust: trust value for each origin node (each player), type: dictionary {int: float}
+        :param demand: demand for each origin node (each player), type: dictionary {int: float}
+        :param capacity: capacity for each arc, type: dictionary {(int, int): float}
+        :param free_flow_time: free flow time for each arc, type: dictionary {(int, int): float}
+        :param required_explore: expected explored travelers number of each arc, type: dictionary {(int, int): float}
+        :param eta: parameter for information gain, type: float
+        :param report_threshold: threshold for reports. If the number of dangerous reports is larger than this threshold,
+        the arc is considered as dangerous and should be deleted from arc_set, type: integer
+        :param num_dangerous_reports: number of dangerous reports of each arc, type: dictionary {(int, int): int}
+        :return:
+    """
+    # check if the dangerous reports are larger than the threshold:
+    # delete the arc from arc_set
+    if bpr_params is None:
+        bpr_params = [0, 1]
+    if num_dangerous_reports is not None:
+        arc_set = [(i, j) for i, j in arc_set if num_dangerous_reports[i, j] <= report_threshold]
+    # update shortest path set
+    G = nx.DiGraph()
+    for i, j in arc_set:
+        G.add_edge(i, j, weight=free_flow_time[(i, j)])
+    # find the shortest path
+    shortest_path = {}
+    travel_time = {}
+    shortest_path_per_node = {}
+    travel_time_per_node = {}
+    shortest_path_link = {}
+    for i in origin_node:
+        j_min = sum(free_flow_time.values())
+        for j in dest_node:
+            shortest_path[i, j] = nx.dijkstra_path(G, i, j)
+            travel_time[i, j] = nx.dijkstra_path_length(G, i, j)
+            if travel_time[i, j] < j_min:
+                j_min = travel_time[i, j]
+                shortest_path_per_node[i] = shortest_path[i, j]
+                travel_time_per_node[i] = travel_time[i, j]
+        # convert shortest path to link formulation
+        path = shortest_path_per_node[i]
+        for j in range(len(path) - 1):
+            cur_link = (path[j], path[j + 1])
+            if cur_link not in shortest_path_link.keys():
+                shortest_path_link[cur_link] = [i]
+            else:
+                shortest_path_link[cur_link].append(i)
+
+    # set default value for capacity and bpr_params
+    if capacity is None:
+        capacity = {(i, j): 1 for i, j in arc_set}
+    if bpr_params is None:
+        bpr_params = [0, 1]
     # solve the static model
     print("Solve the optimization model to get optimal recommendation with weight on exploration.")
     m, x, z, obj1, obj2, x_val, z_val = solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params,
                                                            trust, demand, capacity, free_flow_time,
-                                                           shortest_path_per_node, required_explore, eta)
+                                                           shortest_path_link, required_explore, eta)
     # print(x_val)
     # find the recommended route
     print("Find recommended route from optimized flow")
@@ -66,7 +126,8 @@ def get_recommended_route(arc_set, origin_node, dest_node, num_nodes, bpr_params
     result['planned_arc_flow_origin'] = x_origin_val
     result['planned_total_time'] = obj1
     result['planned_exploration_term'] = obj2
-    result['recommended_route'] = recommended_route
+    result['recommended_route_with_flow'] = recommended_route
+    result['recommended_route'] = parse_recommendation(recommended_route, True)
     return result
 
 
@@ -91,6 +152,7 @@ def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, t
     '''
     m = gp.Model("static_model")
     # Add variables by dictionary arc_set
+    # x = m.addVars(arc_set, name="x", vtype=gp.GRB.INTEGER)
     x = m.addVars(arc_set, name="x")
     z = m.addVars(arc_set, name="z")
     # Add auxiliary variables
@@ -102,7 +164,6 @@ def solve_static_model(arc_set, origin_node, dest_node, num_nodes, bpr_params, t
                        for i, j in arc_set)
     obj2 = 0
     # if we consider reports of blocked arcs, add an information gain term
-    weight = {}
     if require_explore is not None:
         # for i, j in arc_set:
         #     weight[i, j] = 1 / (require_explore[i, j] + 1e-3)
@@ -281,7 +342,7 @@ def parse_recommendation(recommendation_results, single_path=True):
             weight_arr = [flow / total_flow for flow in paths.values()]
             # randomly choose a path based on the weight
             path = random.choices(list(paths.keys()), weight_arr, k=1)[0]
-            recommendation[origin] = [path]
+            recommendation[origin] = [list(path)]
     return recommendation
 
 
@@ -320,6 +381,9 @@ def visualize_recommendation(recommendation, coord_file, arc_set):
     for idx, (origin, routes) in enumerate(recommendation.items()):
         color = colors[idx % len(colors)]  # Cycle through colors
         legend_label = f"Route from {origin}"
+        # if the first element of the route is not a list
+        if not isinstance(routes[0], list):
+            routes = [routes]
         for route in routes:
             route_edges = [(route[i], route[i + 1]) for i in range(len(route) - 1)]
             nx.draw_networkx_edges(G, pos, edgelist=route_edges, width=2, edge_color=color)
